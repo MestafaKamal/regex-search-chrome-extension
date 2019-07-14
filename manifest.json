@@ -1,0 +1,24 @@
+{
+    "name": "Regular expression search",
+    "version": "1.0",
+    "description": "Search for regular expressions",
+
+    "icons" : {
+        "128" : "bitmap.png"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon" : "bitmap.png"
+        
+      },
+      "content_scripts":[
+          {
+            "matches" : ["http://*/*", "https://*/*"],
+            "js":["js/jquery-3.4.1.min.js","js/jquery.highlight.js","content.js"],
+            "css": ["content.css"],
+            "run_at": "document_end"
+          }
+       ],
+      "permissions": ["activeTab"],
+      "manifest_version": 2
+}

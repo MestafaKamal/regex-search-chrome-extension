@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Regex Search</title>
+  <meta http-equiv="content-type" charset=utf-8 />
+  <link rel="stylesheet" href="./material/material.min.css">
+
+  <style>
+      .demo-card-square.mdl-card {
+        width: 320px;
+        height: 320px;
+      }
+      .demo-card-square > .mdl-card__title {
+        color: #fff;
+        background:
+          url('./bitmap.png') left 60% bottom 74% no-repeat rgb(208, 255, 186);
+          background-size: 360px 360px;
+          background-origin: content-box, padding-box;
+      }
+      
+      </style>
+</head>
+<body>
+
+    <div class="demo-card-square mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <h2 class="mdl-card__title-text" style="color: black;">Regex Search</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          Enter a regular expression to search
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+            <div class="mdl-textfield mdl-js-textfield">
+                <input class= "mdl-textfield__input" id="barre" type="text" placeholder="Search" autocomplete="off" name="Search">
+                </div>
+                <div class="mdl-textfield mdl-js-textfield">
+                <button class="mdl-button mdl-js-button mdl-button--raised" id="bouton">Search</button>
+                </div>
+        </div>
+      </div>
+
+
+
+  
+  <script src="material/material.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.highlight.js"></script>
+  <script src="./background.js"></script>
+
+</body>
+</html>
